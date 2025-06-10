@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Galería - Resident Evil 4 Remake</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    .container {
+      display: flex; /* Usar flexbox para el contenedor */
+      flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+      justify-content: space-between; /* Espacio entre los elementos */
+    }
+
+    .image {
+      position: relative; /* Posicionamiento relativo para el texto */
+      overflow: hidden; /* Ocultar texto que sale del contenedor */
+      width: calc(50% - 10px); /* Ancho de cada imagen: 50% menos el margen */
+      height: auto; /* Altura automática para mantener proporciones */
+      margin: 5px; /* Margen entre las imágenes */
+      border: 2px solid #ccc; /* Borde del recuadro */
+      border-radius: 8px; /* Bordes redondeados */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+      transition: transform 0.3s; /* Transición para el efecto de hover */
+    }
+    .image:hover {
+      transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    }
+    .image img {
+      width: 100%; /* Ajustar el ancho de la imagen */
+      height: auto; /* Altura automática para mantener proporciones */
+      object-fit: cover; /* Mantener la proporción sin deformar */
+    }
+    .character-name {
+      position: absolute; /* Posicionamiento absoluto */
+      bottom: 0; /* Colocar en la parte inferior */
+      left: 0; /* Alinear a la izquierda */
+      right: 0; /* Alinear a la derecha */
+      background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+      color: white; /* Color del texto */
+      text-align: center; /* Centrar el texto */
+      padding: 5px; /* Espaciado interno */
+      transform: translateY(100%); /* Inicialmente fuera de vista */
+      transition: transform 0.3s; /* Transición para la animación */
+    }
+    .image:hover .character-name {
+      transform: translateY(0); /* Mostrar el texto al hacer hover */
+    }
+  </style>
+</head>
+<body class="is-preload">
+  <div id="page-wrapper">
+
+    <header id="header">
+      <div class="logo container">
+        <div>
+          <h1><a href="index.html" id="logo">Resident Evil 4</a></h1>
+          <p style="color: darkred;">Explora los detalles del remake</p>
+        </div>
+      </div>
+    </header>
+
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="pagina 1.html">HISTORIA</a></li>
+        <li class="current"><a href="pagina 2.html">GALERÍA</a></li>
+        <li><a href="pagina 3.html">VIDEOS</a></li>
+        <li><a href="pagina 4.html">SECRETOS</a></li>
+         <li><a href="contactenos.html">CONTÁCTENOS</a></li>
+      </ul>
+    </nav>
+
+    <section id="main">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-9 col-12-medium imp-medium">
+            <div class="content">
+              <article class="box page-content">
+
+                <header>
+                  <h2>Galería de imágenes</h2>
+                  <p>Imágenes seleccionadas de personajes, enemigos, armas y escenarios</p>
+                </header>
+
+                <section>
+                  <h3>Personajes principales</h3>
+                  <div class="container">
+                    <div class="image">
+                      <a href="#"><img src="images/leon.avif" alt="Leon S. Kennedy" /></a>
+                      <p class="character-name">Leon S. Kennedy</p>
+                    </div>
+                    <div class="image">
+                      <a href="#"><img src="images/ashley.jpg" alt="Ashley Graham" /></a>
+                      <p class="character-name">Ashley Graham</p>
+                    </div>
+                    <div class="image">
+                      <a href="#"><img src="images/adaa.jpg" alt="Ada Wong" /></a>
+                      <p class="character-name">Ada Wong</p>
+                    </div>
+                      <div class="image">
+                      <a href="#"><img src="images/luis.jpg" alt="Luis Sera" /></a>
+                      <p class="character-name">Luis Sera</p>
+                    </div>
+                  </div>
+                </section>
+
+                <section>
+                  <h3>Enemigos y jefes</h3>
+                  <div class="container">
+                    <div class="image">
+                      <a href="#"><img src="images/gente.png" alt="Ganados" /></a>
+                      <p class="character-name">Ganados</p>
+                    </div>
+                    <div class="image">
+                      <a href="#"><img src="images/verdugo.jpg" alt="Verdugo" /></a>
+                      <p class="character-name">Verdugo</p>
+                    </div>
+                    <div class="image">
+                      <a href="#"><img src="images/saddler.avif" alt="Saddler" /></a>
+                      <p class="character-name">Saddler</p>
+                    </div>
+                  </div>
+                </section>
+
+                <section>
+                  <h3>Escenarios emblemáticos</h3>
+                  <div class="container">
+                    <div class="image">
+                      <a href="#"><img src="images/pueblo.webp" alt="Pueblo" /></a>
+                      <p class="character-name">Pueblo</p>
+                    </div>
+                    <div class="image">
+                      <a href="#"><img src="images/castillo.jpg" alt="Castillo" /></a>
+                      <p class="character-name">Castillo</p>
+                    </div>
+                  </div>
+                </section>
+
+                <section>
+                  <h3>Armas y equipo</h3>
+                  <div class="container">
+                    <div class="image">
+                      <a href="#"><img src="images/pistola.webp" alt="Pistola" /></a>
+                      <p class="character-name">Pistola</p>
+                    </div>
+                    <div class="image">
+                      <a href="#"><img src="images/escopeta.avif" alt="Escopeta" /></a>
+                      <p class="character-name">Escopeta</p>
+                    </div>
+                    <div class="image">
+                      <a href="#"><img src="images/granada.webp" alt="Granada" /></a>
+                      <p class="character-name">Granada</p>
+                    </div>
+                    <div class="image">
+                      <a href="#"><img src="images/lanzacohetees.webp" alt="Lanzacohetes" /></a>
+                      <p class="character-name">Lanzacohetes</p>
+                    </div>
+                  </div>
+                </section>
+
+              </article>
+            </div>
+          </div>
+
+          <div class="col-3 col-12-medium">
+            <div class="sidebar">
+
+              <section>
+                <h2 class="major"><span>Dato curioso</span></h2>
+                <p>
+                  El diseño del pueblo está inspirado en aldeas rurales europeas reales, con un enfoque en la atmósfera opresiva.
+                </p>
+              </section>
+
+              <section>
+                <h2 class="major"><span>Galería interactiva</span></h2>
+                <p>
+                  Más adelante se planea añadir galerías interactivas y zoom en las imágenes para apreciar cada detalle.
+                </p>
+              </section>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <div id="copyright">
+          <ul class="menu">
+            <li>&copy; Todos los derechos reservados</li>
+            <li>Fabian Ricardo Pirazan Leon.</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
